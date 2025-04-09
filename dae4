@@ -1,0 +1,22 @@
+class Transport:
+    def __init__(self, speed):
+        self.speed = speed
+
+    def move(self):
+        print("Їде зі швидкістю", self.speed, "км/год")
+
+
+class Car(Transport):
+    pass
+
+
+class Bicycle(Transport):
+    pass
+
+
+# 🔹 Приклад:
+car = Car(100)
+bike = Bicycle(25)
+
+car.move()
+bike.move()
